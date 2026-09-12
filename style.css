@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  color: #111827;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.home {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.hero {
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 30px;
+  background: #eef4ff;
+  color: #315bd6;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #315bd6;
+}
+
+.hero > p {
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 8px;
+  border: 1px solid #dfe3ea;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.input-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+}
+
+#createBtn {
+  border: none;
+  background: #315bd6;
+  color: white;
+  padding: 0 25px;
+  border-radius: 11px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#createBtn:hover {
+  opacity: 0.9;
+}
+
+#createBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.examples {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.example-btn {
+  border: 1px solid #e0e4ea;
+  background: white;
+  padding: 9px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.example-btn:hover {
+  background: #f1f4f9;
+}
+
+#status {
+  margin-top: 20px;
+  color: #315bd6;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+
+  .header {
+    padding: 0 18px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .hero > p {
+    font-size: 16px;
+  }
+
+  .input-box {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #createBtn {
+    padding: 15px;
+  }
+
+  .home {
+    align-items: flex-start;
+    padding-top: 70px;
+  }
+}
