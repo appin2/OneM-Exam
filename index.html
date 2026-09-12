@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Quiz</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="header">
+      <div class="logo">AI Quiz</div>
+    </header>
+
+    <main class="home">
+
+      <section class="hero">
+
+        <div class="badge">
+          ✨ AI Powered Quiz
+        </div>
+
+        <h1>
+          যেকোনো বিষয় নিয়ে<br>
+          <span>Quiz তৈরি করুন</span>
+        </h1>
+
+        <p>
+          একটি বিষয় লিখুন। AI আপনার জন্য
+          আকর্ষণীয় MCQ Quiz তৈরি করবে।
+        </p>
+
+        <div class="input-box">
+
+          <input
+            id="topicInput"
+            type="text"
+            placeholder="যেমন: প্রাচীন বিশ্ব সভ্যতা"
+          >
+
+          <button id="createBtn">
+            Create Quiz
+          </button>
+
+        </div>
+
+        <div class="examples">
+
+          <button class="example-btn">
+            🏛️ প্রাচীন সভ্যতা
+          </button>
+
+          <button class="example-btn">
+            🌍 বাংলাদেশ
+          </button>
+
+          <button class="example-btn">
+            🔬 বিজ্ঞান
+          </button>
+
+        </div>
+
+        <p id="status"></p>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
